@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>Thank you for your business!</h1>
+    <p>We charged your credit card for ${{request.session.itemcost}}</p>
+    <p>You have ordered {{request.session.totalitems}} items so far and spent ${{request.session.totalamount}} with Amadon.com!</p>
+    </body>
+    <a href="/">Go Back</a>
+    <a href="/clear">Clear</a>
+</html>
